@@ -1,0 +1,18 @@
+package OOPStudy;
+
+public abstract class  myabstractClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("This is abstract class");
+		
+
+	}
+     myabstractClass()
+    {
+    	 System.out.println("constructor for abstract"); 
+    	 
+    }
+	
+}
