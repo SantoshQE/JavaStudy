@@ -1,0 +1,14 @@
+package OOPStudy;
+
+public class InheritanceStudy_Child extends InheritanceStudy_Parent  {
+
+	public static void main(String[] args) 
+	{	
+		InheritanceStudy_Child  ch = new InheritanceStudy_Child();
+		ch.parent_Method1();
+		ch.parent_Method2();	
+		
+		
+	}
+	
+}
