@@ -1,0 +1,58 @@
+package OOPStudy;      //package name
+
+public class ClassStudy {      //Class name
+
+	public static void main(String[] args) {    // Method name
+		// public --> Access modifier
+		//static --> no need to create object in order to access it
+		//void --> return type
+		// main --> main method --> entry point of program execution --> main name method name specified in JVM
+		// interface --> a class can implement more than 1 interface thus it supports multiple inheritance
+/*Constructors are used to initialize an object --> its like setting some default values which we can get when 
+an object is initialized using New keyword
+if we don't specify any constructor then java compiler run the default construtor during code execution
+*/
+		
+
+	}
+	
+	public static void TestMethod()   // methods implements the bahavior of the class and its objects
+	{
+		
+		
+	}
+	
+	
+
+}
+
+/*
+ 
+ object consists of 
+ 
+ For ex: Dog object
+ state :  breed
+ behaviour/attributes : bark,run
+ identity:  name of dog
+ 
+ We cant create objects of an abstract class and interface
+ * */
+
+/*
+ 4 Ways To create object
+ 
+   1. object obj = new object();
+   2. class.forname [reflection api]
+   test obj = test1.class.forname(pkgName).newinstance();
+    
+   3. clone object
+    Object obj = new Object();
+    Object obj2 = (Object)obj.clone
+   
+   4. Deserialization 
+    FileInputStream file = new FileInputStream(filename);
+	ObjectInputStream in = new ObjectInputStream(file);
+	Object obj = in.readObject();
+
+
+*/
