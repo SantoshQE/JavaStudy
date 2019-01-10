@@ -1,0 +1,15 @@
+package OOPStudy;
+
+public class CallToAbstractClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// myabstractClass abs = new myabstractClass();   abstract class cannot be instantiated using new keyword in java
+		
+		
+		
+	}
+
+}
+
+
