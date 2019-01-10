@@ -1,0 +1,21 @@
+package OOPStudy;
+
+public class JavaObjectStore {
+
+	public static void main(String[] args) {
+		// When we declare any varibale in java only a reference is created no memory is allocated till that time
+		// when an object is created using New keyword then memory gets allocated in heap
+		
+		JavaObjectStore chk = new JavaObjectStore() ;
+		chk.show();
+
+	}
+	
+	
+	// class contents 
+	void show() 
+	{ 
+	    System.out.println("Test::show() called"); 
+	} 
+
+}
