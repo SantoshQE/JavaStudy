@@ -1,0 +1,21 @@
+package OOPStudy;
+
+public class CreateObjNewInstance {
+
+	String name = "GeeksForGeeks"; 
+
+
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+
+		/*  Class cls = Class.forName("CreateObjNewInstance"); 
+		    CreateObjNewInstance obj = (CreateObjNewInstance) cls.newInstance(); 
+		    System.out.println(obj.name); */
+
+		/*CreateObjNewInstance cls = new CreateObjNewInstance();
+		 System.out.println(cls.name); */
+		CreateObjNewInstance obj = (CreateObjNewInstance) CreateObjNewInstance.class.forName("OOPStudy").newInstance();
+		System.out.println(obj.name);
+
+	}
+
+}
