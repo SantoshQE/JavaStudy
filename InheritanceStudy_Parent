@@ -1,0 +1,25 @@
+package OOPStudy;
+
+public class InheritanceStudy_Parent {
+
+	//class fields --> members
+	
+	String Parentname;
+	
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+	
+	protected void parent_Method1()
+	{
+		System.out.println("This method1 in Parent Class");
+	}
+	protected void parent_Method2()
+	{
+		System.out.println("This method2 in Parent Class");
+	}	
+
+}
