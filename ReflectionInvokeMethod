@@ -1,0 +1,68 @@
+
+
+package Tests;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+
+public class MethodInspector {
+
+	public static void main(String[] args) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException
+	{
+		//Class inspect;
+		try {
+			/*if (arguments.length > 0)
+		        inspect = Class.forName("MethodInspector");
+		      else*/
+			Class inspect = Class.forName("Tests.TestNgClass1");
+
+			Method[] methods = inspect.getDeclaredMethods();
+			for (int i = 0; i < methods.length; i++) 
+			{
+				Method methVal = methods[i];
+				Class returnVal = methVal.getReturnType();
+				int mods = methVal.getModifiers();
+				String modVal = Modifier.toString(mods);
+				Class[] paramVal = methVal.getParameterTypes();
+				StringBuffer params = new StringBuffer();
+				
+				for (int j = 0; j < paramVal.length; j++) 
+				{
+					if (j > 0)
+						params.append(", ");
+					params.append(paramVal[j].getName());
+				}
+				
+				System.out.println("Method: " + methVal.getName() + "()");
+				System.out.println("Modifiers: " + modVal);
+				System.out.println("Return Type: " + returnVal.getName());
+				System.out.println("Parameters: " + params + "\n");
+				
+				
+				
+				
+				
+				
+				/* ****************************************************************** */ 
+				/* String methoName = "method1"; // methodname to be invoked
+				String className = "Tests.TestNgClass1";// Class name
+				Class<?> cls = Class.forName(className);
+				Object _instance = cls.newInstance();
+				Method myMethod = cls.getDeclaredMethod(methoName, params);
+						//.getDeclaredMethod(methoName, params)
+
+				myMethod.invoke(_instance, obj); */
+
+				//  methVal.invoke(methVal.getName().toString(), params);
+
+			}
+		} catch (ClassNotFoundException c) {
+			System.out.println(c.toString());
+		}
+	}
+
+
+
+}
+
